@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="/static/app.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>YuGiOh Search</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-md navbar-light bg-light fixed-top text-dark"
+      style="height: 80px;"
+    >
+      <h1 style='display:inline'>Random YuGiOh Card</h1>
+    </nav>
+
+    <div
+      style="height: 100vh; display: flex; align-items: center; background-image: url(https://media.comicbook.com/2018/02/yugioh-1085605-1280x0.jpeg); background-size: cover;"
+      class="bg-primary"
+      id="landing"
+    >
+      <div
+        class="jumbotron bg-light text-dark"
+        style="margin: 0 auto; text-align: center; opacity: 0.9;"
+      >
+        <div class="mb-3" style="padding-bottom: 35px;">
+          <a>Suburb</a>
+          <select id="suburb">
+            <option value=3256>Arch Hill</option>
+          </select>
+
+          <a style="padding-left: 20px;">Adjacent Suburbs OK?</a>
+          <input type="text" id="adjacent_suburbs" />
+        </div>
+        <div class="mb-3" style="padding-bottom: 35px;">
+          <a>Lowest Rent $</a>
+          <input type="text" value="0" id="price_min" />
+          <a>Highest Rent $</a>
+          <input type="text" id="price_max" />
+        </div>
+        <div class="mb-3" style="padding-bottom: 35px;">
+          <a>Property Type</a>
+          <select id="property_type">
+            <option value="Unit">Unit</option>
+          </select>
+        </div>
+        <div class="mb-3" style="padding-bottom: 35px;">
+          <a>Are you a couple?</a>
+          <input type="text" id="couples_ok" />
+          <a style="padding-left: 50px;">Do you have a pet?</a>
+          <input type="text" id="pets_ok" />
+        </div>
+        <button id="btn" href="#" class="btn btn-dark btn-lg">
+          SEARCH CARD
+        </button>
+      </div>
+    </div>
+
+    <!-- <div id="results" style="display: none">
+        <div class="py-5 bg-dark" style="height: 100vh; display: flex; align-items: center; padding-top: 100px;">
+          <div class="row" style="width: 100%; padding-top: 80px;">
+
+
+            <div class="col" style="text-align: left;">
+              <button id="no" class="btn btn-info" 
+                style="height: -webkit-fill-available; margin-left: 20px;width:100%;">
+                NO THANKS
+              </button>
+            </div>
+
+
+            <div class="col-8" style="text-align: center;">
+              <div id = "listing" class="card shadow-sm" style="height: -webkit-fill-available;" >
+                    <img id="listingImage" class="img-fluid"
+                    src=https://forum.byjus.com/wp-content/themes/qaengine/img/default-thumbnail.jpg
+                    alt="Listing Image" 
+                    style="
+                    width: 700px;
+                    height: 300px;
+                    width:auto" />
+                    <div class="card-body">
+                        <p id="title" class="card-text">Listing Title</p>
+                        <p id="bedrooms" class="card-text">Listing Title</p>
+                        <p id="bathrooms" class="card-text">Listing Title</p>
+                        <p id="amenities" class="card-text">Listing Title</p>
+                        <p id="currentFlatmates" class="card-text">Listing Title</p>
+                        <p id="idealTenant" class="card-text">Listing Title</p>
+                    </div>
+              </div>
+            </div>
+
+            <div class="col" style="text-align: right;">
+              <button id="yes" class="btn btn-info" 
+                style="height: -webkit-fill-available;margin-right: 20px;width:100%">
+                APPLY
+              </button>
+            </div>
+            </div>
+            
+          </div> -->
+         
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
