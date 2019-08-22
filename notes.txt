@@ -1,0 +1,9 @@
+https://db.ygoprodeck.com/api-guide/
+
+Search by:
+- Name
+- Type {Monster Card, Spell Card, Trap Card}
+- race
+- atk
+- def
+
