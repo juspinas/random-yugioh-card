@@ -5,7 +5,6 @@ var count = 0
 
 $( document ).ready(function() {
     $("#nextButton").click(function( event ) {
-        console.log("This is from index.js");
         event.preventDefault()
         debugger
         return $.ajax({
